@@ -1,5 +1,0 @@
-key='vHEpRoFESI3sa7oNTngfanciS'
-secret='HC9au6bPfa5oY3kf80T0WpV4zA88GW2p79gJQJvjFy0POn2Sll'
-token_key='785841983793274881-pGp3dIvTcTWchUkTBqDEg1OEOk6cSe4'
-token_secret='asspnrCp7Dj0a4KPaifbVzi1uDV6gfHiwctHW7yziBTjf'
-weather_key='4ad4f458bb0047189016ce8b6f4fb5dc'
