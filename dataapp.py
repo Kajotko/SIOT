@@ -91,6 +91,7 @@ class Ui_Dialog(object):
         self.label_6.setObjectName("label_6")
         self.label_7 = QtWidgets.QLabel(Dialog)
         self.label_7.setGeometry(QtCore.QRect(170, 570, 141, 271))
+        self.label_7.setWordWrap(True)
         font = QtGui.QFont()
         font.setFamily("Moon")
         font.setPointSize(16)
