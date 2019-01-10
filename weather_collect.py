@@ -1,3 +1,4 @@
+##Collect weather data
 import requests, time, json, csv, datetime, os.path, config
 from datetime import date
 from requests.exceptions import ConnectionError
@@ -7,9 +8,9 @@ yesterday=today
 if not os.path.isfile('data/'+today+'_weather.csv'): #add column titles if the data is collected for the first time
     with open('data/'+today+'_weather.csv', 'ab') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(["time", "city", "pressure", 'temperature', 'descrption'])
+        writer.writerow(["time", "city", "pressure", 'temperature', 'description'])
 
-cities=['London,uk','New+York,us', 'Tokyo,jp']
+cities=['Hendon,uk','New+York,us', 'Tokyo,jp']
 key=config.weather_key
 while True: #keep getting data for each city every 6 seconds
     for city in cities:

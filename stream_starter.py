@@ -1,4 +1,5 @@
-#Script to start a twitter stream
+#Script to start a twitter stream with retrying
+
 import time
 while True:
     try:

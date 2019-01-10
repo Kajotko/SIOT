@@ -1,14 +1,14 @@
+###Start data collection GUI
+
 from PySide.QtCore import *
 from PySide.QtGui import *
-import sys
+
 from PySide import QtCore, QtGui
-import sys
-import datetime
-import copy
+import sys, os
+
 import ui
 from subprocess import Popen, PIPE
 import datetime
-from threading import Thread
 
 class MainScreen(QWidget, ui.Ui_Dialog):
     def __init__(self, parent=None):
@@ -45,7 +45,7 @@ class MainScreen(QWidget, ui.Ui_Dialog):
         self.textBrowser.append('STOPPED '+time)
         self.textBrowser_2.append('STOPPED '+time)
     def store(self):
-        s = Popen("store.bat",cwd=r"C:\Users\Karolina\OneDrive - Imperial College London\Year 4\Sensing\Coursework\code",stdout=PIPE,)
+        s = Popen("store.bat",cwd=os.getcwd(),stdout=PIPE,)
         time=str(datetime.datetime.now())
         self.textBrowser_3.setText(time)
 
